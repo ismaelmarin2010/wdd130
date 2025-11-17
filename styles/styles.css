@@ -1,27 +1,53 @@
+:root {
+    --base-color: darkblue;
+    --secondary-color: #eee;
+    --alt-color: lightgray;
+    --main-alignment: center;
+    --font-family: "Helvetica", Arial, sans-serif;
+    --font-size: 0.9rem;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font-family);
+}
+
 main {
     max-width: 450px;
+    background-color: var(--alt-color);
+    padding: 1rem;
+
 }
 
 aside {
     width: 20rem;
-    margin: 1rem;
-    border: 1px solid rgb(0 0 0 / 0.2);
-    padding: 1rem;
-    background-color: #eee;
-    color: #333;
-    text-align: center;
+    text-align: var(--main-alignment);
+    position: relative;
 }
 
-/* Test */
+
+/* This is the format for the image and title inside the box */
 
 aside img {
     width: 200px;
     height: auto;
 }
 
+aside h2 {
+    position: absolute;
+    top: 120px;
+    left: 100px;
+    color: var(--secondary-color);
+}
+
+/* --------------------------------------------------------- */
+
 nav {
-    background-color: darkblue;
+    background-color: var(--base-color);
     padding: 10px;
+    display: flex;
 }
 
 nav a {
@@ -30,8 +56,17 @@ nav a {
     padding: 20px;
 }
 
+/* This is the format for the Temples link box */
+li {
+    margin-bottom: 0.5rem;
+}
+
+/* ------------------------------------------- */
+
 h1 {
-    color: darkblue;
+    color: var(--base-color);
+    font-size: 2rem;
+    border-bottom: 3px solid var(--base-color);
 }
 
 main img {
@@ -40,16 +75,40 @@ main img {
     border: 1px solid black;
     padding: 2px;
     box-shadow: 0 0 30px gray;
+    float: right;
+    margin: 1rem 0 1rem 1rem;
 }
 
 p {
-    padding: 0;
+    /* padding: 0.5rem; */
+    padding: 0.5rem 0rem 0.5rem 0rem;
+    font-size: var(--font-size);
+    line-height: 1.4rem;
+}
+
+ul {
+    list-style: none;
+    padding: 1rem;
+}
+
+ul.box {
+    margin: 0;
 }
 
 footer {
     margin-top: 10px;
     border-top: 1px solid #000;
-    text-align: center;
+    text-align: var(--main-alignment);
 }
 
+
+/* Class Selectors */
+
+.box {
+    margin: 1rem;
+    padding: 1rem;
+    border: 1px solid gray;
+    color: var(--base-color);
+    background-color: var(--secondary-color);
+}
 
