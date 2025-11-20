@@ -1,0 +1,98 @@
+/* Main Variables */
+:root {
+  --primary-color:   rgba(30, 79, 138, 1);   /* Blue life jacket */
+  --secondary-color: rgba(242, 210, 60, 1);   /* Yellow safety helmet */
+  --accent1-color:   rgba(107, 143, 88, 1);   /* Forrest green */
+  --accent2-color:   rgba(216, 169, 121, 1);  /* Skin tone */
+  --heading-font: 'Montserrat', sans-serif;
+  --body-font: 'Roboto', sans-serif;
+}
+
+
+/* Hard Reset of CSS for the Page */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* HEADER: Main logo, links to other pages */
+header {
+    background-color: var(--primary-color);
+    color: var(--accent2-color);
+}
+
+
+/* BODY: Divs, Sections, Articles, etc */
+body {
+    font-family: var(--body-font);
+    color: var(--accent1-color);
+}
+
+header, main, footer {
+    width: 840px;
+    margin: 0 auto;
+}
+
+h1, h2 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+}
+
+nav, p, section, article {
+    margin: 16px;
+    padding: 8px;
+}
+
+.socialmedia a {
+    text-decoration: none;
+}
+
+.hero {
+    position: relative;
+}
+
+h1 {
+    position: absolute;
+    text-align: center;
+    top: 10px;
+    /* left: 20px; */
+    padding: 10px 0 10px 0;
+    background-color: rgba(255, 255, 255, 0.6); /* White */
+    width: 840px;
+}
+
+.hero article {
+    position: absolute;
+    text-align: left;
+    color: black;
+    margin: 0;
+    top: 75px;
+    left: 50px;
+    /* left: 20px; */
+    padding: 10px 0 10px 0;
+    background-color: rgba(242, 210, 60, 0.6);
+    width: 750px;
+    /* height: 180px; */
+}
+
+.hero article img {
+    width: 130px;
+    float: right;
+    padding: 0 15px 0 15px;
+}
+
+p {
+    font-family: var(--body-font);
+    line-height: 1.4rem;
+    margin: 0;
+    padding: 15px;
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
