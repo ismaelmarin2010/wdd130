@@ -15,7 +15,7 @@
 }
 
 main {
-    max-width: 450px;
+    /* max-width: 450px; */
     background-color: var(--alt-color);
     padding: 1rem;
 
@@ -125,7 +125,7 @@ footer {
 
 .grid {
     display: grid;
-    grid-template-columns: 0.5fr 0.5fr;
+    grid-template-columns: 1fr 2fr;
     grid-gap: 1rem;
     margin-top: 1rem;
     margin-bottom: 1rem;
