@@ -7,10 +7,10 @@
 
 /* Main Variables */
 :root {
-  --primary-color:   rgba(30, 79, 138, 1);   /* Blue life jacket */
-  --secondary-color: rgba(242, 210, 60, 1);   /* Yellow safety helmet */
-  --accent1-color:   rgba(107, 143, 88, 1);   /* Forrest green */
-  --accent2-color:   rgba(216, 169, 121, 1);  /* Skin tone */
+  --primary-color:   rgba(30, 79, 138, 1);   /* Blue for background */
+  --secondary-color: rgba(242, 210, 60);   /* Yellow as the safety helmet */
+  --accent1-color:   rgba(107, 143, 88, 1);   /* Forrest green for ...?*/
+  --accent2-color:   rgba(255, 252, 242, 1);  /* For text over dark background */
   --heading-font: 'Montserrat', sans-serif;
   --body-font: 'Roboto', sans-serif;
 }
@@ -23,7 +23,7 @@ header {
     display: grid;
     grid-template-columns: 150px 1fr;
     align-items: center;
-    border-bottom: 1px solid #ccc;
+    border-bottom: 1px solid var(--accent2-color);
 }
 
 header img {
@@ -101,7 +101,7 @@ h1 {
     top: 10px;
     /* left: 20px; */
     padding: 10px 0 10px 0;
-    background-color: rgba(255, 255, 255, 0.6); /* White */
+    background-color: var(--accent2-color);
     width: 840px;
 }
 
@@ -178,7 +178,7 @@ p {
     height: auto;
     border: 1px solid black;
     padding: 2px;
-    box-shadow: 0 0 30px gray;
+    box-shadow: var(--accent1-color);
     justify-self: center;
 }
 
@@ -219,8 +219,8 @@ footer {
 
 /* START OF FOOTER CSS CODE */
 footer {
-    background-color: gray;
-    color: white;
+    background-color: var(--accent1-color);
+    color: var(--accent2-color);
     margin: 1rem auto;
     display: grid;
     grid-template-columns: 1fr 250px;
@@ -243,7 +243,6 @@ footer p {
 
 .socialmedia a {
     display: flex;
-    color: var(--accent2-color);
     padding: 5px;
     text-decoration: none;
     font-size: 1.2rem;
@@ -252,7 +251,7 @@ footer p {
 
 footer img {
     max-width: 40px;
-    max-height: auto;
+    max-height: fit-content;
     justify-self: left;
 }
 
