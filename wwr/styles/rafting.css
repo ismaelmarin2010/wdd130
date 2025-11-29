@@ -1,3 +1,10 @@
+/* Hard Reset of CSS for the Page */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 /* Main Variables */
 :root {
   --primary-color:   rgba(30, 79, 138, 1);   /* Blue life jacket */
@@ -7,15 +14,6 @@
   --heading-font: 'Montserrat', sans-serif;
   --body-font: 'Roboto', sans-serif;
 }
-
-
-/* Hard Reset of CSS for the Page */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 
 /* HEADER: Main logo, links to other pages */
 header {
@@ -91,10 +89,6 @@ h1, h2 {
 nav, p, section, article {
     margin: 16px;
     padding: 8px;
-}
-
-.socialmedia a {
-    text-decoration: none;
 }
 
 .hero {
@@ -238,12 +232,12 @@ footer p {
     justify-self: left;
 }
 
-.socialmedia {
+.socialmedia ul {
     display: flex;
     list-style: none;
 }
 
-.socialmedia li {
+.socialmedia ul li {
     flex: 1 1 auto;
 }
 
@@ -258,7 +252,7 @@ footer p {
 
 footer img {
     max-width: 40px;
-    max-width: auto;
+    max-height: auto;
     justify-self: left;
 }
 
