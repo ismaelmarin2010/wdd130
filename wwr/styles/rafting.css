@@ -9,7 +9,7 @@
 :root {
   --primary-color:   rgba(30, 79, 138, 1);   /* Blue for background */
   --secondary-color: rgba(242, 210, 60);   /* Yellow as the safety helmet */
-  --accent1-color:   rgba(107, 143, 88, 1);   /* Forrest green for ...?*/
+  --accent1-color:   rgba(75, 110, 60, 1);   /* Forrest green for ...?*/
   --accent2-color:   rgba(255, 252, 242, 1);  /* For text over dark background */
   --heading-font: 'Montserrat', sans-serif;
   --body-font: 'Roboto', sans-serif;
