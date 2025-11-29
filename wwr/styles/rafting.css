@@ -21,6 +21,54 @@
 header {
     background-color: var(--primary-color);
     color: var(--accent2-color);
+    margin: 1rem auto;
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+}
+
+header img {
+    max-width: 120px;
+    justify-self: center;
+}
+
+/* .logo img {
+    margin: 0 0.25rem 0 1rem;
+    width: 64px;
+    height: auto;
+}
+
+#logo {
+    font-size: 2rem;
+    font-family: Acme, Arial, sans-serif;
+} */
+
+.navigation {
+    display: flex;
+    list-style: none;
+}
+
+.navigation li {
+    flex: 1 1 auto;
+}
+
+.navigation a {
+    display: flex;
+    color: var(--accent2-color);
+    padding: 20px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    justify-content: center;
+}
+
+.navigation a:hover {
+    color: var(--secondary-color);
+    text-decoration: underline;
+}
+
+/* nav {
+    justify-content: center;
 }
 
 
@@ -96,3 +144,122 @@ p {
     height: auto;
 }
 
+.history {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 50px 250px;
+    justify-content: center;
+}
+
+.history h2 {
+    grid-column: 1/4;
+    justify-self: center;
+}
+
+.history img {
+    width: auto;
+    height: 250px;
+    border: 1px solid black;
+    padding: 2px;
+    box-shadow: 0 0 30px gray;
+    justify-self: center;
+}
+
+.adventure {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(5, 0.2fr);
+    grid-template-rows: 50px 250px;
+    justify-items: center;
+}
+
+.adventure h2 {
+    grid-column: 1/6;
+    justify-self: center;
+}
+
+.adventure img {
+    width: 120px;
+    height: auto;
+    border: 1px solid black;
+    padding: 2px;
+    box-shadow: 0 0 30px gray;
+    justify-self: center;
+}
+
+figure {
+    padding: 10px;
+}
+
+/* .socialmedia {
+    background-color: var(--primary-color);
+    color: var(--accent2-color);
+    margin: 1rem auto;
+    display: grid;
+    grid-template-columns: 1fr 50px 50px 50px;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+}
+
+.socialmedia p {
+    grid-column: 1/4;
+    justify-self: center;
+}
+
+footer {
+    display: grid;
+    grid-template-columns: 0.8fr 0.2fr;
+}
+
+.socialmedia {
+    display: flex;
+    padding: 20px;
+    justify-content: center;
+}
+
+.socialmedia li {
+    text-decoration: none;
+} */
+
+
+/* START OF FOOTER CSS CODE */
+footer {
+    background-color: gray;
+    color: white;
+    margin: 1rem auto;
+    display: grid;
+    grid-template-columns: 1fr 250px;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+}
+
+footer p {
+    justify-self: left;
+}
+
+.socialmedia {
+    display: flex;
+    list-style: none;
+}
+
+.socialmedia li {
+    flex: 1 1 auto;
+}
+
+.socialmedia a {
+    display: flex;
+    color: var(--accent2-color);
+    padding: 5px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    justify-content: center;
+}
+
+footer img {
+    max-width: 40px;
+    max-width: auto;
+    justify-self: left;
+}
+
+/* END OF FOOTER CSS CODE */
