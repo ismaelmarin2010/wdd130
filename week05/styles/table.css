@@ -1,0 +1,33 @@
+body {
+    background-color: blue;
+}
+
+th, td {
+    padding: 10px;
+    /* margin: 10px; */
+    border: 0.5px;
+    border-style: solid;
+    border-color: gray;
+    justify-self: center;
+}
+
+table {
+    border: 3px;
+    border-style: solid;
+    border-color: gray;
+    border-spacing: 0;
+    border-collapse: collapse;
+    font-family: 'Montserrat', sans-serif;
+    justify-self: center;
+}
+
+thead, tfoot {
+    background-color: black;
+    color: white;
+}
+
+tbody {
+    background-color: whitesmoke;
+    color: black;
+}
+
