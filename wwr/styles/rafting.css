@@ -257,18 +257,13 @@ iframe {
     grid-column: 1/ 2;
     grid-row: 2 / 3;
     height: 100%;
-}
-
-.employees {
-    grid-row: 3 / 4;
-    grid-column: 1 / 3;
-    border: 1px solid var(--border-color);
+    border-style: none;
 }
 
 /* Form Style */
 form {
     /* border: 2px solid #9494948f; */
-    padding: 10px;
+    padding: 0 0 0 10px;
     border-radius: 5px;
     display: grid;
     gap: 10px;
@@ -319,15 +314,16 @@ input, textarea, select {
 }
 
 button {
-    background-color: rgb(58, 58, 184);
-    color: #fff;
+    background-color: var(--primary-color);
+    color: var(--accent2-color);
     text-transform: uppercase;
     padding: 10px;
     border-radius: 5px;
 }
 
 button:hover {
-    background-color: rgb(82, 82, 201);
+    background-color: var(--secondary-color);
+    color: var(--accent1-color);
     cursor: pointer;
 }
 
@@ -338,7 +334,9 @@ button:hover {
     display: grid;
     grid-template-columns: repeat(3, 0.333fr);
     grid-template-rows: 50px 250px;
-    /* justify-content: center; */
+    grid-row: 3 / 4;
+    grid-column: 1 / 3;
+    border: 1px solid var(--border-color);
 }
 
 .employees h2 {
