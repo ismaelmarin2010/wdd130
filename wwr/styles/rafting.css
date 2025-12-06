@@ -310,7 +310,7 @@ input, textarea, select {
     padding: 5px;
     border-radius: 5px;
     margin-bottom: 15px;
-    border: 2px solid #9494948f;
+    border: 1px solid var(--border-shadow-color);
 }
 
 button {
