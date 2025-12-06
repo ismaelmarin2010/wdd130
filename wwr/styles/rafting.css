@@ -138,6 +138,10 @@ p {
     justify-self: center;
 }
 
+.history p {
+    padding: 0 15px 15px 15px;
+}
+
 .history img {
     width: auto;
     height: 320px;
