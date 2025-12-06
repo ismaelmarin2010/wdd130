@@ -330,7 +330,8 @@ button:hover {
 /* End of Form */
 
 .employees {
-    margin-top: 50px;
+    width: 100%;
+    margin: 50px 0 0 0;
     display: grid;
     grid-template-columns: repeat(3, 0.333fr);
     grid-template-rows: 50px 250px;
