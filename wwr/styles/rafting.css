@@ -11,7 +11,7 @@
   --secondary-color: rgba(242, 210, 60);   /* Yellow as the safety helmet */
   --accent1-color:   rgba(75, 110, 60, 1);   /* Forrest green for ...?*/
   --accent2-color:   rgba(255, 252, 242, 1);  /* For text over dark background */
-  --border-color: rgba(0, 0, 0, 1); /* Black for border */
+  --border-color: rgba(0, 0, 0, 1); /* Black for border and some text */
   --border-shadow-color: rgba(128, 128, 128, 1); /* Gray for shadow */
   --border-bottom: rgba(255, 255, 255, 1); /* white for border bottom on headers*/
   --heading-font: 'Montserrat', sans-serif;
@@ -95,13 +95,13 @@ h1 {
 .hero article {
     position: absolute;
     text-align: left;
-    color: black;
+    color: var(--border-color);
     margin: 0;
     top: 75px;
     left: 50px;
     /* left: 20px; */
     padding: 10px 0 10px 0;
-    background-color: rgba(242, 210, 60, 0.7);
+    background-color: rgba(242, 210, 60, 0.8);
     width: 750px;
     /* height: 180px; */
 }
@@ -116,7 +116,11 @@ p {
     font-family: var(--body-font);
     line-height: 1.4rem;
     margin: 0;
-    padding: 0 15px 15px 15px;
+    padding: 0 15px 0 15px;
+}
+
+.hero p {
+    line-height: 2em;
 }
 
 .hero img {
