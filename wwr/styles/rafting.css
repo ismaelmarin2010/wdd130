@@ -13,7 +13,6 @@
   --accent2-color:   rgba(255, 252, 242, 1);  /* For text over dark background */
   --border-color: rgba(0, 0, 0, 1); /* Black for border and some text */
   --border-shadow-color: rgba(128, 128, 128, 1); /* Gray for shadow */
-  --border-bottom: rgba(255, 255, 255, 1); /* white for border bottom on headers*/
   --heading-font: 'Montserrat', sans-serif;
   --body-font: 'Roboto', sans-serif;
 }
