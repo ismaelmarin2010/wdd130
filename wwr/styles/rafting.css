@@ -11,6 +11,9 @@
   --secondary-color: rgba(242, 210, 60);   /* Yellow as the safety helmet */
   --accent1-color:   rgba(75, 110, 60, 1);   /* Forrest green for ...?*/
   --accent2-color:   rgba(255, 252, 242, 1);  /* For text over dark background */
+  --border-color: rgba(0, 0, 0, 1); /* Black for border */
+  --border-shadow-color: rgba(128, 128, 128, 1); /* Gray for shadow */
+  --border-bottom: rgba(255, 255, 255, 1); /* white for border bottom on headers*/
   --heading-font: 'Montserrat', sans-serif;
   --body-font: 'Roboto', sans-serif;
 }
@@ -29,17 +32,6 @@ header img {
     max-width: 120px;
     justify-self: center;
 }
-
-/* .logo img {
-    margin: 0 0.25rem 0 1rem;
-    width: 64px;
-    height: auto;
-}
-
-#logo {
-    font-size: 2rem;
-    font-family: Acme, Arial, sans-serif;
-} */
 
 .navigation {
     display: flex;
@@ -62,10 +54,6 @@ header img {
 .navigation a:hover {
     color: var(--secondary-color);
     text-decoration: underline;
-}
-
-/* nav {
-    justify-content: center;
 }
 
 
@@ -153,9 +141,9 @@ p {
 .history img {
     width: auto;
     height: 250px;
-    border: 1px solid black;
+    border: 1px solid var(--border-color);
     padding: 2px;
-    box-shadow: 0 0 30px gray;
+    box-shadow: 0 0 30px var(--border-shadow-color);
     justify-self: center;
 }
 
@@ -175,9 +163,9 @@ p {
 .adventure img {
     width: 120px;
     height: auto;
-    border: 1px solid black;
+    border: 1px solid var(--border-color);
     padding: 2px;
-    box-shadow: 0 0 30px gray;
+    box-shadow: 0 0 30px var(--border-shadow-color);
     justify-self: center;
 }
 
@@ -185,35 +173,6 @@ figure {
     padding: 10px;
 }
 
-/* .socialmedia {
-    background-color: var(--primary-color);
-    color: var(--accent2-color);
-    margin: 1rem auto;
-    display: grid;
-    grid-template-columns: 1fr 50px 50px 50px;
-    align-items: center;
-    border-bottom: 1px solid #ccc;
-}
-
-.socialmedia p {
-    grid-column: 1/4;
-    justify-self: center;
-}
-
-footer {
-    display: grid;
-    grid-template-columns: 0.8fr 0.2fr;
-}
-
-.socialmedia {
-    display: flex;
-    padding: 20px;
-    justify-content: center;
-}
-
-.socialmedia li {
-    text-decoration: none;
-} */
 
 
 /* START OF FOOTER CSS CODE */
@@ -224,7 +183,7 @@ footer {
     display: grid;
     grid-template-columns: 1fr 250px;
     align-items: center;
-    border-bottom: 1px solid #ccc;
+    /* border-bottom: 1px solid #ccc; */
 }
 
 footer p {
