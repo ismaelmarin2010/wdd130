@@ -21,10 +21,18 @@
 header {
     background-color: var(--primary-color);
     color: var(--accent2-color);
-    margin: 1rem auto;
+    /* margin: 1rem auto; */
     display: grid;
     grid-template-columns: 150px 1fr;
     align-items: center;
+    
+    /* Make it fixed into the page when scrolling */
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    height: 125px;
 }
 
 header img {
@@ -60,6 +68,10 @@ header img {
 body {
     font-family: var(--body-font);
     color: var(--accent1-color);
+}
+
+main {
+    padding-top: 120px; /* adjust to match your header's real height */
 }
 
 header, main, footer {
@@ -313,7 +325,7 @@ input, textarea, select {
     border: 1px solid var(--border-shadow-color);
 }
 
-button {
+button, #trip-button {
     background-color: var(--primary-color);
     color: var(--accent2-color);
     text-transform: uppercase;
@@ -321,7 +333,7 @@ button {
     border-radius: 5px;
 }
 
-button:hover {
+button:hover, #trip-button:hover {
     background-color: var(--secondary-color);
     color: var(--accent1-color);
     cursor: pointer;
@@ -343,7 +355,7 @@ button:hover {
 .employees h2 {
     grid-column: 1/6;
     justify-self: center;
-    padding: 10px;
+    padding: 10px 10px ;
 }
 
 .employees img {
@@ -371,3 +383,111 @@ figcaption {
 
 
 /* ENDER OF CONTACT US CSS CODE */
+
+
+
+
+/* START OF INDEX UNIQUE CSS */
+
+.index {
+    position: relative;
+}
+
+.index h1 {
+    position: absolute;
+    text-align: center;
+    top: 10px;
+    padding: 10px 0 10px 0;
+    background-color: rgba(0, 0, 0, 0.18);
+    color: var(--accent2-color);
+    width: 840px;
+}
+
+.index article {
+    position: absolute;
+    text-align: center;
+    color: var(--border-color);
+    margin: 0;
+    top: 125px;
+    left: 480px;
+    /* left: 20px; */
+    padding: 10px 0 10px 0;
+    background-color: rgba(242, 210, 60, 0.7);
+    width: 200px;
+    /* height: 180px; */
+}
+
+
+.index h2, .index p {
+    padding: 0 10px 20px 10px;
+}
+
+
+.index img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.newsletter {
+    margin: 50px 0 0 0;
+    /* display: grid;
+    grid-template-columns: 1fr 0.8fr 1fr;
+    grid-template-rows: 50px 320px; */
+    justify-content: center;
+    background-color: rgba(30, 79, 138, 0.3);
+    padding: 20px;
+}
+
+.newsletter h2, .newsletter p {
+    /* grid-column: 1/4; */
+    text-align: center;
+    padding: 5px;
+}
+
+.newsletter form {
+    padding: 15px 10px 10px 10px;
+}
+
+
+.family {
+    margin: 50px 0 0 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    justify-items: center;
+    padding: 0;
+}
+
+.family h2 {
+    grid-column: 1/4;
+    justify-self: center;
+}
+
+.family img {
+    width: 100%;
+    margin: 0 10px 0 10px;
+    height: auto;
+    border: 1px solid var(--border-color);
+    padding: 2px;
+    box-shadow: 0 0 30px var(--border-shadow-color);
+}
+
+
+.family figure {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.family figcaption {
+    padding-top: 20px;
+}
+
+#trip-button {
+    display: inline-block;
+    text-decoration: none;
+    width: 150px;
+    justify-self: center;
+}
