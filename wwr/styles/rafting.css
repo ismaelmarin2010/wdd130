@@ -439,7 +439,7 @@ figcaption {
     padding: 20px;
 }
 
-.newsletter h2, .newsletter p {
+.newsletter h2, .newsletter p, .get-in-contact h2, .get-in-contact p {
     /* grid-column: 1/4; */
     text-align: center;
     padding: 5px;
@@ -490,4 +490,87 @@ figcaption {
     text-decoration: none;
     width: 150px;
     justify-self: center;
+}
+
+.trip {
+    margin: 50px 0 0 0;
+    background-color: rgba(30, 79, 138, 0.2);
+    padding: 20px 20px 30px 20px;
+}
+
+.trip h2, .trip p, .call-to-action h2, .call-to-action p {
+    padding: 0 0 10px 0;
+}
+
+.trip p {
+    display: block;
+}
+
+.trip img {
+    width: 180px;
+    height: auto;
+    border: 1px solid black;
+    padding: 2px;
+    box-shadow: 0 0 30px gray;
+    float: right;
+    margin: 0.0 0 0 1rem;
+}
+
+#trip-img {
+    width: 180px;
+    height: auto;
+    border: 1px solid black;
+    padding: 2px;
+    box-shadow: 0 0 30px gray;
+    float: left;
+    margin: 0.5rem 1.1rem 0 0;
+}
+
+
+.call-to-action {
+    display: block;
+    margin: 20px 0 0 0;
+    text-align: left;
+    color: var(--border-color);
+    /* top: 125px;
+    left: 480px; */
+    padding: 20px;
+    background-color: rgba(242, 210, 60, 0.7);
+    /* width: 200px; */
+}
+
+.call-to-action h2, .call-to-action p {
+    padding: 0;
+}
+
+.call-to-action a {
+    display: block;
+}
+
+#adventure {
+    background-color: var(--primary-color);
+    color: var(--accent2-color);
+    text-transform: uppercase;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    display: block;
+    text-decoration: none;
+    width: 400px;
+    justify-self: center;
+    text-align: center;
+}
+
+#adventure:hover {
+    background-color: var(--secondary-color);
+    color: var(--accent1-color);
+    cursor: pointer;
+}
+
+.get-in-contact {
+    width: 100%;
+    margin: 50px 0 0 0;
+    border: 1px solid var(--border-color);
+    justify-content: center;
+    padding: 20px;
 }
